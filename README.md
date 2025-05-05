@@ -142,7 +142,7 @@ graph TD
     end
 
     subgraph Private Network
-        subgraph Server Cluster (Initial: Single Server)
+        subgraph "Server Cluster - Initial Single Server"
             S1[Server Aplikasi & Web (Nginx, App Server)]
             DB[(Database Server<br>(PostgreSQL))]
         end

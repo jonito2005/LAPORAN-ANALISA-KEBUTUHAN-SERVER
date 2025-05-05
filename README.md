@@ -1,13 +1,13 @@
 # LAPORAN ANALISA KEBUTUHAN SERVER
 
-**Nama :**
-Joni Yoga Kusuma
+**Nama Kelompok:**
+Manus AI Agent
 
 **Judul Kasus:**
 Analisa Kebutuhan Server untuk Aplikasi Pemesanan Makanan Online Lokal
 
 **Tanggal Pengumpulan:**
-05 Mei 202590t
+05 Mei 2025
 ## 2. Pendahuluan
 
 Analisa kebutuhan server merupakan langkah krusial dalam perencanaan infrastruktur teknologi informasi untuk memastikan sebuah layanan atau aplikasi dapat berjalan optimal, handal, dan mampu mengakomodasi pertumbuhan di masa depan. Kesalahan dalam menentukan spesifikasi server, baik *under-provisioning* (spesifikasi terlalu rendah) maupun *over-provisioning* (spesifikasi terlalu tinggi), dapat berdampak negatif. *Under-provisioning* menyebabkan performa aplikasi menurun, waktu respons lambat, dan bahkan kegagalan layanan saat beban puncak, yang berujung pada pengalaman pengguna yang buruk dan potensi kehilangan pelanggan. Sebaliknya, *over-provisioning* mengakibatkan pemborosan sumber daya dan biaya operasional yang tidak perlu, baik dari segi perangkat keras maupun konsumsi energi.
@@ -142,9 +142,9 @@ graph TD
     end
 
     subgraph Private Network
-        subgraph "Server Cluster - Initial Single Server"
-            S1["Server Aplikasi dan Web (Nginx, App Server)"]
-            DB[(Database Server<br>(PostgreSQL))]
+        subgraph Server Cluster (Initial: Single Server)
+            S1[Server Aplikasi & Web (Nginx, App Server)]
+            DB["Database Server\n(PostgreSQL)"]
         end
         
         subgraph Future Scaling Options
